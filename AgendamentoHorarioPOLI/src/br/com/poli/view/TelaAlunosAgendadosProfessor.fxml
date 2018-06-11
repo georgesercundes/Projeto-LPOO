@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Label layoutX="221.0" layoutY="66.0" text="Alunos Agendados" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="619.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" rotate="32.0">
+               <image>
+                  <Image url="@../../../../../imagens/15-Light-Bulb-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="597.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/libros.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="537.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" rotate="14.0">
+               <image>
+                  <Image url="@../../../../../imagens/Agenda-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="489.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" rotate="-24.0">
+               <image>
+                  <Image url="@../../../../../imagens/relogio-velho_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="79.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/icone_professor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="83.0" layoutX="8.0" layoutY="11.0" onMouseClicked="#clickSelecaoTeladeCadastro" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/27e2a59ab1ed4e676a85c619ec2cf5f9-seta-fita-curva-by-vexels.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="23.0" prefHeight="19.0" prefWidth="96.0" text="Página anterior">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="634.0" layoutY="21.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="731.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/logout-rounded-up.png" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="251.0" layoutY="135.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #87CEFA;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
