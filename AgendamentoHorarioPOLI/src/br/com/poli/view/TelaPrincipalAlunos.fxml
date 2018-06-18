@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaPrincipalAluno">
+   <children>
+      <AnchorPane layoutY="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="722.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Label layoutX="324.0" layoutY="47.0" prefHeight="54.0" prefWidth="165.0" text="Bem Vindo!">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="590.0" layoutY="34.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRealizarAgendamento" layoutX="140.0" layoutY="208.0" mnemonicParsing="false" onAction="#clickRealizarAgendamento" prefHeight="15.0" prefWidth="235.0" style="-fx-background-color: #1E90FF;" text="Realizar Agendamento" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGerenciarAgendamentoAluno" layoutX="99.0" layoutY="299.0" mnemonicParsing="false" onAction="#clickGerenciarAgendamentos" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: #1E90FF;" text="Gerenciar Agendamentos" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="222.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/aluno1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="681.0" layoutY="34.0" onMouseClicked="#clickSairDaConta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/logout-rounded-up.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="72.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/94f8bca5c48854f428177c5239f3129e.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="38.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/94f8bca5c48854f428177c5239f3129e.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="599.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" rotate="32.0">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/15-Light-Bulb-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="577.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/libros.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="517.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" rotate="14.0">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/Agenda-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="469.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="-24.0">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/LPOO-2.3-master(1)/LPOO-2.3-master/AgendamentoDeHorarioPOLI-%204.0/imagens/relogio-velho_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

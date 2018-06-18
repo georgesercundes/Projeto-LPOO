@@ -20,32 +20,32 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="253.0" layoutY="52.0" prefHeight="76.0" prefWidth="286.0" text="CADASTRO ALUNO" textFill="WHITE">
+      <Label layoutX="253.0" layoutY="52.0" prefHeight="76.0" prefWidth="286.0" text="CADASTRO ALUNO">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="128.0" prefHeight="17.0" prefWidth="90.0" text="Nome" textFill="WHITE">
+      <Label layoutX="59.0" layoutY="128.0" text="Nome" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="188.0" prefHeight="17.0" prefWidth="90.0" text="Cpf" textFill="WHITE">
+      <Label layoutX="59.0" layoutY="188.0" text="Cpf" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="248.0" prefHeight="17.0" prefWidth="90.0" text="Curso" textFill="WHITE">
+      <Label layoutX="59.0" layoutY="248.0" text="Curso" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="299.0" prefHeight="17.0" prefWidth="90.0" text="Turma" textFill="WHITE">
+      <Label layoutX="59.0" layoutY="299.0" text="Turma" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="350.0" prefHeight="17.0" prefWidth="90.0" text="Senha" textFill="WHITE">
+      <Label layoutX="59.0" layoutY="350.0" text="Senha" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>

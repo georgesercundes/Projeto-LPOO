@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaDefinirAtendimentoFuncionario">
+   <children>
+      <AnchorPane layoutX="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Label layoutX="177.0" layoutY="66.0" text="Definir Horário de Atendimento" textAlignment="CENTER">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DatePickerProfessor" layoutX="158.0" layoutY="229.0" prefHeight="25.0" prefWidth="174.0" promptText="Selecionar data" />
+            <ComboBox fx:id="comboBoxTurno" blendMode="SRC_ATOP" layoutX="159.0" layoutY="283.0" prefHeight="25.0" prefWidth="174.0" promptText="Selecionar Turno" />
+            <Button fx:id="definirButton" layoutX="194.0" layoutY="339.0" mnemonicParsing="false" onAction="#clickDefinir" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #1E90FF;" text="Definir" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="83.0" layoutX="8.0" layoutY="11.0" onMouseClicked="#clickVoltar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/27e2a59ab1ed4e676a85c619ec2cf5f9-seta-fita-curva-by-vexels.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="23.0" prefHeight="19.0" prefWidth="96.0" text="Página anterior">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="634.0" layoutY="21.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="731.0" layoutY="20.0" onMouseClicked="#clickSairDaConta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/logout-rounded-up.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="168.0" layoutX="465.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" rotate="16.7">
+               <image>
+                  <Image url="@../../../../../imagens/cadastro.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="627.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../imagens/funcionario.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="professorCpfTextField" layoutX="158.0" layoutY="172.0" prefHeight="25.0" prefWidth="174.0" promptText="Digite o CPF do Professor" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

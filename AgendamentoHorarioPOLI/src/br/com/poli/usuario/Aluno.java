@@ -1,10 +1,16 @@
 package br.com.poli.usuario;
 
+import java.util.ArrayList;
+
+import br.com.poli.sistema.Agendamento;
+
 public class Aluno extends ComunidadeAcademicaPoli {
 
 	// Atributos da classe
+	private static final long serialVersionUID = 1L;
 	private String curso;
 	private String turma;
+	private ArrayList<Agendamento> agendamentos = new ArrayList<>();
 
 	// Construtor da classe com chamada para construtor da superclasse
 	public Aluno(String nome, String cpf, String senha, String curso, String turma) {
@@ -30,10 +36,12 @@ public class Aluno extends ComunidadeAcademicaPoli {
 		return curso;
 	}
 
-	// Representação String da Classe
-	@Override
-	public String toString() {
-		return String.format("%s%n%s: %s%n%s: %s%n", super.toString(), "Curso", getCurso(), "Turma", getTurma());
+	public void setAgendamentos(Agendamento agendamento) {
+		agendamentos.add(agendamento);
+	}
+
+	public ArrayList<Agendamento> getAgendamentos() {
+		return agendamentos;
 	}
 
 }

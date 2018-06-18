@@ -7,20 +7,27 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaAlunosAgendadosProfessor">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaDefinirAtendimentoProfessor">
    <children>
-      <AnchorPane blendMode="SRC_ATOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;">
          <children>
-            <Label layoutX="257.0" layoutY="66.0" text="Alunos Agendados" textAlignment="CENTER">
+            <Label layoutX="177.0" layoutY="66.0" text="Definir Horário de Atendimento" textAlignment="CENTER">
                <font>
                   <Font size="31.0" />
                </font>
             </Label>
-            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="639.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="625.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../imagens/icone_professor.png" />
                </image>
             </ImageView>
+            <DatePicker fx:id="DatePickerProfessor" layoutX="157.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" promptText="Selecionar data" />
+            <ComboBox fx:id="comboBoxTurno" blendMode="SRC_ATOP" layoutX="157.0" layoutY="237.0" prefHeight="25.0" prefWidth="174.0" promptText="Selecionar Turno" />
+            <Button fx:id="definirButton" layoutX="193.0" layoutY="308.0" mnemonicParsing="false" onAction="#clickDefinir" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #1E90FF;" text="Definir" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
             <ImageView fitHeight="55.0" fitWidth="83.0" layoutX="8.0" layoutY="11.0" onMouseClicked="#clickVoltar" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../imagens/27e2a59ab1ed4e676a85c619ec2cf5f9-seta-fita-curva-by-vexels.png" />
@@ -41,9 +48,7 @@
                   <Image url="@../../../../../imagens/logout-rounded-up.png" />
                </image>
             </ImageView>
-            <ListView fx:id="listViewAgendamentos" layoutX="45.0" layoutY="187.0" opacity="0.83" prefHeight="218.0" prefWidth="412.0" />
-            <ComboBox fx:id="comboBoxAtendimento" layoutX="135.0" layoutY="143.0" onAction="#carregarListViewAgendamentos" prefHeight="25.0" prefWidth="232.0" promptText="Selecionar Dia do Atendimento" />
-            <ImageView fitHeight="124.0" fitWidth="168.0" layoutX="512.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" rotate="16.7">
+            <ImageView fitHeight="124.0" fitWidth="168.0" layoutX="465.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" rotate="16.7">
                <image>
                   <Image url="@../../../../../imagens/cadastro.png" />
                </image>

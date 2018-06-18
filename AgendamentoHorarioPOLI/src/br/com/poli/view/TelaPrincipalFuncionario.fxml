@@ -14,32 +14,27 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaPrincipalFuncionario">
    <children>
-      <Label layoutX="334.0" layoutY="57.0" prefHeight="54.0" prefWidth="165.0" text="Bem Vindo!" textFill="WHITE">
+      <Label layoutX="334.0" layoutY="57.0" prefHeight="54.0" prefWidth="165.0" text="Bem Vindo!">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="600.0" layoutY="44.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta" textFill="WHITE">
+      <Label layoutX="600.0" layoutY="44.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btnRealizarAgendamentoFuncionario" layoutX="150.0" layoutY="218.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="235.0" style="-fx-background-color: #1E90FF;" text="Realizar Agendamento" textFill="WHITE">
+      <Button fx:id="btnRealizarAgendamentoFuncionario" layoutX="108.0" layoutY="162.0" mnemonicParsing="false" onAction="#clickRealizarAgendamento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Realizar Agendamento" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnAcompanharAgendamentoFuncionario" layoutX="109.0" layoutY="309.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="276.0" style="-fx-background-color: #1E90FF;" text="Acompanhar Agendamento" textFill="WHITE">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="82.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
          <image>
             <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
          <image>
             <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
          </image>
@@ -64,7 +59,7 @@
             <Image url="@../../../../../imagens/relogio-velho_2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="691.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="691.0" layoutY="44.0" onMouseClicked="#clickSairDaConta" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../imagens/logout-rounded-up.png" />
          </image>
@@ -72,6 +67,31 @@
       <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="231.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../imagens/funcionario.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRealizarAgendamento1" layoutX="108.0" layoutY="228.0" mnemonicParsing="false" onAction="#clickCancelarAgendamento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Cancelar Agendamento" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMarcarHorarioAtendimento1" layoutX="108.0" layoutY="293.0" mnemonicParsing="false" onAction="#clickDefinirAtendimento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Definir Horário de Atendimento" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoverHorarioAtendimento" layoutX="108.0" layoutY="358.0" mnemonicParsing="false" onAction="#clickRemoverAtendimento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Remover Horário de Atendimento" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+         <image>
+            <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+         <image>
+            <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
          </image>
       </ImageView>
    </children>

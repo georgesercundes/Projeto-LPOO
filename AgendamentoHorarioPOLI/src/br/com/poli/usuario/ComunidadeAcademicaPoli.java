@@ -1,8 +1,11 @@
 package br.com.poli.usuario;
 
-public class ComunidadeAcademicaPoli {
+import java.io.Serializable;
+
+public class ComunidadeAcademicaPoli implements Serializable {
 
 	// Atributos da classe
+	private static final long serialVersionUID = 1L;
 	private String nome;
 	private String cpf;
 	private String senha;
@@ -37,11 +40,6 @@ public class ComunidadeAcademicaPoli {
 
 	public String getSenha() {
 		return senha;
-	}
-
-	// Representação String da Classe
-	public String toString() {
-		return String.format("%s: %s%n%s: %s%n%s: %s", "Nome", getNome(), "CPF", getCpf(), "Senha", getSenha());
 	}
 
 }

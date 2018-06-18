@@ -32,7 +32,7 @@ public class SegundaTela extends Application {
 
 		SegundaTela.stage = secondaryStage;
 		stage.setScene(scene);
-		stage.setTitle("Agendamento");
+		stage.setTitle("AgendamentoHorarioPoli");
 		stage.show();
 	}
 

@@ -20,7 +20,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="273.0" layoutY="72.0" prefHeight="68.0" prefWidth="308.0" text="CADASTRO PROFESSOR" textFill="WHITE">
+      <Label layoutX="273.0" layoutY="72.0" prefHeight="68.0" prefWidth="308.0" text="CADASTRO PROFESSOR">
          <font>
             <Font size="25.0" />
          </font>

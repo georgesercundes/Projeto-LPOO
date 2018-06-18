@@ -8,8 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import br.com.poli.usuario.Aluno;
 import br.com.poli.sistema.Cadastro;
+import br.com.poli.usuario.Aluno;
+import br.com.poli.util.ValidacaoDeDados;
 
 public class ControllerTelaCadastroAluno {
 
@@ -45,22 +46,39 @@ public class ControllerTelaCadastroAluno {
 	@FXML
 	public void clickCadastrar(ActionEvent event) throws Exception {
 		try {
-			if (Cadastro.validaCPF(txtcpfAluno.getText())) {
+			if (ValidacaoDeDados.validarCPF(txtcpfAluno.getText())) {
 				Aluno aluno = new Aluno(txtNomeAluno.getText(), txtcpfAluno.getText(), txtSenhaAluno.getText(),
 						txtCursoAluno.getText(), txtTurmaAluno.getText());
-				Cadastro.cadastrarUsuario(aluno, aluno.getCpf());
-				Alert info = new Alert(AlertType.INFORMATION);
-				info.setTitle("Usuário Cadastrado");
-				info.setHeaderText(null);
-				info.setContentText("Cadastro Realizado com Sucesso");
-				info.showAndWait();
-				try {
-					new SegundaTela("TelaLogin.fxml").start(MainApp.stage);
+				
+				if (Cadastro.verificarSeCadastroExiste(aluno.getCpf())) {
+
+					Alert alerta = new Alert(AlertType.ERROR);
+					alerta.setTitle("Erro");
+					alerta.setHeaderText(null);
+					alerta.setContentText("Já existe um cadastro com esse CPF");
+					alerta.showAndWait();
+					txtcpfAluno.clear();
+					txtcpfAluno.selectAll();
+					txtcpfAluno.requestFocus();
+
 				}
 
-				catch (Exception e) {
-					e.printStackTrace();
+				else {
+					Cadastro.cadastrar(aluno, aluno.getCpf());
+					Alert info = new Alert(AlertType.INFORMATION);
+					info.setTitle("Usuário Cadastrado");
+					info.setHeaderText(null);
+					info.setContentText("Cadastro Realizado com Sucesso");
+					info.showAndWait();
+					try {
+						new SegundaTela("TelaLogin.fxml").start(MainApp.stage);
+					}
+
+					catch (Exception e) {
+						e.printStackTrace();
+					}
 				}
+
 			}
 
 			else {

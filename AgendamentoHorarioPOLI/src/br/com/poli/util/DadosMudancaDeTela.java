@@ -1,6 +1,6 @@
 package br.com.poli.util;
 
-public class DadosMudançaDeTela {
+public class DadosMudancaDeTela {
 	
 	private static String cpfUsuario;
 
@@ -9,7 +9,7 @@ public class DadosMudançaDeTela {
 	}
 
 	public static void setCpfUsuario(String cpfUsuario) {
-		DadosMudançaDeTela.cpfUsuario = cpfUsuario;
+		DadosMudancaDeTela.cpfUsuario = cpfUsuario;
 	}
 	
 	

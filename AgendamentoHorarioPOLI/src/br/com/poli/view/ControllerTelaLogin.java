@@ -2,8 +2,10 @@ package br.com.poli.view;
 
 import java.util.ArrayList;
 
+import br.com.poli.sistema.Cadastro;
 import br.com.poli.sistema.Login;
-import br.com.poli.util.DadosMudançaDeTela;
+import br.com.poli.util.DadosMudancaDeTela;
+import br.com.poli.util.ValidacaoDeDados;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -59,24 +61,25 @@ public class ControllerTelaLogin {
 	public void Entrar(ActionEvent event) {
 		String TipoUsuarioSelecionado = cbTipoLogin.getSelectionModel().getSelectedItem();
 		Login login = new Login(txtLogin.getText(), txtSenha.getText());
+		String tipoUsuario = Cadastro.resgatarUsuarioCadastro(login.getLogin()).getClass().getSimpleName();
 
 		if (TipoUsuarioSelecionado == null) {
 			cbTipoLogin.requestFocus();
 		}
 
 		else {
-			if (login.validaCPF(txtLogin.getText())) {
+			if (ValidacaoDeDados.validarCPF(txtLogin.getText())) {
 				if (login.logar()) {
-					DadosMudançaDeTela.setCpfUsuario(txtLogin.getText());
-					if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(0))) {
+					DadosMudancaDeTela.setCpfUsuario(txtLogin.getText());
+					if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(0)) && tipoUsuario.equals(tiposUsuarios.get(0))) {
 						try {
-							new SegundaTela("TelaPrincipalAluno.fxml").start(MainApp.stage);
+							new SegundaTela("TelaPrincipalAlunos.fxml").start(MainApp.stage);
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
 					}
 
-					else if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(1))) {
+					else if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(1)) && tipoUsuario.equals(tiposUsuarios.get(1))) {
 						try {
 							new SegundaTela("TelaPrincipalFuncionario.fxml").start(MainApp.stage);
 						} catch (Exception e) {
@@ -84,13 +87,21 @@ public class ControllerTelaLogin {
 						}
 					}
 
-					else if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(2))) {
+					else if (TipoUsuarioSelecionado.equals(tiposUsuarios.get(2)) && tipoUsuario.equals(tiposUsuarios.get(2))) {
 						try {
 							new SegundaTela("TelaPrincipalProfessor.fxml").start(MainApp.stage);
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
 
+					}
+					else {
+						Alert alerta = new Alert(AlertType.ERROR);
+						alerta.setTitle("Erro");
+						alerta.setHeaderText(null);
+						alerta.setContentText("Tipo de usuário cadastrado diferente do selecionado");
+						alerta.showAndWait();
+						cbTipoLogin.requestFocus();
 					}
 
 				}
@@ -123,7 +134,7 @@ public class ControllerTelaLogin {
 
 	public void carregarTiposUsuarios() {
 		tiposUsuarios.add("Aluno");
-		tiposUsuarios.add("Funcionário");
+		tiposUsuarios.add("Funcionario");
 		tiposUsuarios.add("Professor");
 		obsTiposUsuarios = FXCollections.observableArrayList(tiposUsuarios);
 		cbTipoLogin.setItems(obsTiposUsuarios);

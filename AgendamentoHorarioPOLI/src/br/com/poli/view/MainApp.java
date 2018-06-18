@@ -12,14 +12,13 @@ public class MainApp extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		// TODO Auto-generated method stub
 
 		Parent cena = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
 
 		MainApp.stage = primaryStage;
 		Scene scene = new Scene(cena);
 		stage.setScene(scene);
-		stage.setTitle("Agendamento");
+		stage.setTitle("AgendamentoHorarioPoli");
 		stage.show();
 	}
 

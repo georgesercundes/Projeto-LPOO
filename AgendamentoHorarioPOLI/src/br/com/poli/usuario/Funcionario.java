@@ -4,6 +4,7 @@ public class Funcionario extends ComunidadeAcademicaPoli {
 
 	// Atributos da classe
 	private String cargo;
+	private static final long serialVersionUID = 1L;
 
 	// Construtor da classe com chamada para construtor da superclasse
 	public Funcionario(String nome, String cpf, String senha, String cargo) {
@@ -18,12 +19,6 @@ public class Funcionario extends ComunidadeAcademicaPoli {
 
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
-	}
-
-	// Representação String da Classe
-	@Override
-	public String toString() {
-		return String.format("%s%n%s: %s%n", super.toString(), "Cargo", getCargo());
 	}
 
 }

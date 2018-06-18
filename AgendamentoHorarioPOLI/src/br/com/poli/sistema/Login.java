@@ -1,5 +1,7 @@
 package br.com.poli.sistema;
 
+import br.com.poli.util.ValidacaoDeDados;
+
 public class Login {
 
 	private String login;
@@ -27,20 +29,12 @@ public class Login {
 	}
 
 	public boolean logar() {
-		if (Cadastro.verificarCadastroExistente(getLogin())) {
-			if (Cadastro.verificarSeEstaContido(getLogin(), getSenha()))
+		if (Cadastro.verificarSeCadastroExiste(getLogin())) {
+			if (ValidacaoDeDados.validarSenha(getLogin(), getSenha()))
 				return true;
 		}
 
 		return false;
-	}
-
-	// Método para validar o cpf
-	public boolean validaCPF(String cpf) {
-		if (cpf.length() != 11)
-			return false;
-
-		return true;
 	}
 
 }

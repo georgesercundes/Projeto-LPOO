@@ -14,32 +14,32 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.view.ControllerTelaPrincipalProfessor">
    <children>
-      <Button fx:id="btnMarcarHorarioAtendimento" layoutX="119.0" layoutY="232.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="317.0" style="-fx-background-color: #1E90FF;" text="Definir Horário de Atendimento" textFill="WHITE">
+      <Button fx:id="btnRemoverHorarioAtendimento" layoutX="119.0" layoutY="272.0" mnemonicParsing="false" onAction="#clickRemoverAtendimento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Remover Horário de Atendimento" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnAcompanharAtendimento" layoutX="119.0" layoutY="319.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="317.0" style="-fx-background-color: #1E90FF;" text="Acompanhar Agendamentos" textFill="WHITE">
+      <Button fx:id="btnAcompanharAtendimento" layoutX="119.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickAgendamentos" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Acompanhar Agendamentos" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Label layoutX="344.0" layoutY="67.0" prefHeight="54.0" prefWidth="165.0" text="Bem Vindo!" textFill="WHITE">
+      <Label layoutX="304.0" layoutY="67.0" prefHeight="54.0" prefWidth="165.0" text="Bem Vindo!">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="634.0" layoutY="54.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta" textFill="WHITE">
+      <Label layoutX="634.0" layoutY="28.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="58.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="58.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
          <image>
             <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="58.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="58.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
          <image>
             <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
          </image>
@@ -64,16 +64,25 @@
             <Image url="@../../../../../imagens/relogio-velho_2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="725.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="725.0" layoutY="27.0" onMouseClicked="#clickSairDaConta" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../imagens/logout-rounded-up.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="245.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="196.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../imagens/icone_professor.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtProfessorPrincipal" layoutX="24.0" layoutY="29.0" />
+      <Button fx:id="btnMarcarHorarioAtendimento1" layoutX="119.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickDefinirAtendimento" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: #1E90FF;" text="Definir Horário de Atendimento" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="58.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+         <image>
+            <Image url="@../../../../../imagens/94f8bca5c48854f428177c5239f3129e.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
